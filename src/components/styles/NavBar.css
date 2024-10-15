@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #40e0d0, #00bfff); /* Turquoise gradient */
+  background-color:#005254; /* Turquoise gradient */
   padding: 15px 30px;
   position: sticky;
   top: 0;
