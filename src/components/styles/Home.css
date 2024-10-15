@@ -1,0 +1,20 @@
+.home-container {
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+.home-container h1 {
+  color: #fafafa; /* Text color */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Glow effect */
+               0 0 20px rgba(255, 255, 255, 0.5), 
+               0 0 30px rgba(255, 255, 255, 0.2);
+}
+  
+.home-container p {
+  color: #e9dfdf; /* Text color */
+  text-shadow: 0 0 10px rgba(233, 223, 223, 0.8), /* Glow effect */
+               0 0 20px rgba(233, 223, 223, 0.5),
+               0 0 30px rgba(233, 223, 223, 0.2);
+}
+  

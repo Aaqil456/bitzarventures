@@ -1,0 +1,85 @@
+/* Basic Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #40e0d0, #00bfff); /* Turquoise gradient */
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo h1 {
+  color: rgb(19, 18, 18);
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+/* Navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links li a {
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  padding: 10px 40px; /* Adding padding inside the box */
+  border: 2px solid ; /* Border for the box */
+  border-color: #fffdfd;
+  border-radius: 10px; /* Rounded corners */
+  background: radial-gradient(circle, #000000, #000000);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease;
+}
+
+/* Hover effects with glowing box */
+.navbar-links li a:hover {
+  color: #000000; /* Change color on hover */
+  background-color: rgba(255, 255, 255, 0.4); /* Slightly brighter background */
+  background: radial-gradient(circle, #fcfcfc, #7fddf5);
+  border-color: #000000; /* Glowing border color */
+  box-shadow: 0 0 15px rgba(255, 111, 97, 0.8), 0 0 25px rgba(2, 2, 2, 0.6); /* Glowing effect */
+}
+
+/* Animation: Slide underline on hover */
+/*
+.navbar-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: -5px;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+}
+*/
+.navbar-links li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
